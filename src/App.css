@@ -1,0 +1,168 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.tweet {
+  display: flex;
+  border: 1px solid #e6ecf0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tweet-content {
+  flex: 1;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.handle {
+  color: #657786;
+  margin-right: 5px;
+}
+
+.timestamp {
+  color: #657786;
+}
+
+.tweet-text {
+  margin-bottom: 5px;
+}
+
+.tweet-image {
+  width: 50%;
+  height: auto;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.tweet-footer {
+  display: flex;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: #657786;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #1da1f2;
+}
+
+
+
+/* navbar styles */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-item.active a {
+  color: #1DA1F2;
+}
+
+.search-box {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  width: 200px;
+  border: none;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.search-box button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-box button i {
+  color: #1DA1F2;
+  font-size: 16px;
+}
