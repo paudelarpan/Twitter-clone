@@ -26,18 +26,19 @@ const SingleTweet = () => {
     <>
       {tweet ? (
         <Tweet
-        content={tweet?.content}
+        caption={tweet?.content}
           name={tweet?.user.fullname}
           username={tweet?.user.name}
           
-          image={tweet.image}
+          body={tweet.image}
           id={tweet?._id}
           avatar={
-            "https://avatars.githubusercontent.com/u/" + tweet?.user.githubId + "?v=4"
+            `https://avatars.githubusercontent.com/u/${tweet?.user?.githubId}`
           }
           key={tweet._id}
         />
       ) : null}
+      
     </>
   );
 };

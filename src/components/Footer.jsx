@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <div className="tweet-footer">
-      <button className="btn-reply">Reply</button>
+      {/* <button className="btn-reply">Comment</button> */}
       <button className="btn-retweet">Retweet</button>
       {isLiked ? (
         <UnlikeButton toggle={toggle} />
@@ -22,6 +22,8 @@ const Footer = () => {
         <LikeButton toggle={toggle} />
       )}
       <button className="btn-share">Share</button>
+      <br />
+      <textarea name="" id="" cols="30" rows="10" placeholder="Comment here" ></textarea>
     </div>
   );
 };
